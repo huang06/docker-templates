@@ -1,3 +1,3 @@
 # Docker Templates
 
-This repo provide reusable docker compose templates for development.
+This repo provides Docker Compose templates for reuse.
