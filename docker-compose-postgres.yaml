@@ -1,20 +1,24 @@
 ---
-version: '3.8'  # optional since v1.27.0
+version: '3'  # optional since v1.27.0
 services:
   postgres:
-    image: docker.io/library/postgres:14.3-alpine
+    image: docker.io/library/postgres:14.5-alpine
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: postgres
     ports:
-      - 15432:5432
+      - '15432:5432'
     volumes:
-      - my-postgres:/var/lib/postgresql/data
+      - pgdata:/var/lib/postgresql/data
     healthcheck:
-      test: [CMD, pg_isready, -U, postgres]
+      test:
+        - CMD
+        - pg_isready
+        - -U
+        - postgres
       interval: 5s
       retries: 5
     restart: always
 volumes:
-  my-postgres:
+  pgdata:
