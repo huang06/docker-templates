@@ -1,0 +1,12 @@
+---
+version: "3"  # optional since v1.27.0
+services:
+  simple-http-server:
+    image: docker.io/library/python:3.10.8-slim-buster
+    ports:
+      - "8080:8080"
+    entrypoint:
+      - /bin/bash
+      - -c
+    command:
+      - python3 -m http.server 8080
