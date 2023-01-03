@@ -2,7 +2,7 @@
 version: '3'  # optional since v1.27.0
 services:
   minio:
-    image: docker.io/minio/minio:RELEASE.2022-10-21T22-37-48Z
+    image: docker.io/minio/minio:RELEASE.2022-12-12T19-27-27Z
     ports:
       - 9000:9000
       - 9001:9001
@@ -18,7 +18,7 @@ services:
       - :9001
   # https://github.com/minio/minio/issues/4769
   createbuckets:
-    image: docker.io/minio/mc:RELEASE.2022-10-20T23-26-33Z
+    image: docker.io/minio/mc:RELEASE.2022-12-13T00-23-28Z
     depends_on:
       - minio
     entrypoint: >
