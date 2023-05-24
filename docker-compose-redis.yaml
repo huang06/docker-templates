@@ -1,0 +1,14 @@
+---
+version: "3"
+images:
+  redis:
+    image: docker.io/bitnami/redis:6.2.12
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - "6379:6379"
+
+  redisinsight:
+    image: docker.io/redislabs/redisinsight:1.14.0
+    ports:
+      - "8001:8001"
