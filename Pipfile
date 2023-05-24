@@ -4,10 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pre-commit = "*"
 
 [dev-packages]
-pytest-cov = "*"
+pre-commit = "*"
 
 [requires]
-python_version = "3.8"
