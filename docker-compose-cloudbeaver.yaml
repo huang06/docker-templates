@@ -1,0 +1,11 @@
+---
+version: "3"
+services:
+  cloudbeaver:
+    image: docker.io/dbeaver/cloudbeaver:23.3.0
+    ports:
+      - 8080:8978
+    volumes:
+      - my_dbeaver:/opt/cloudbeaver/workspace
+volumes:
+  my_dbeaver:
