@@ -1,8 +1,8 @@
 ---
-version: '3.8'  # optional since v1.27.0
+version: '3'
 services:
   pgadmin:
-    image: docker.io/dpage/pgadmin4:7.7
+    image: docker.io/dpage/pgadmin4:8.4
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
