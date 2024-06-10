@@ -1,5 +1,4 @@
 ---
-version: '3'  # optional since v1.27.0
 services:
   minio:
     image: docker.io/minio/minio:RELEASE.2022-12-12T19-27-27Z
