@@ -19,7 +19,8 @@ repos:
     rev: v4.2.0
     hooks:
       - id: conventional-pre-commit
-        stages: [commit-msg]
+        stages:
+          - commit-msg
   - repo: local
     hooks:
       - id: lint-markdown
@@ -27,6 +28,8 @@ repos:
         description: Checks the style of Markdown files.
         entry: markdownlint
         language: node
-        types: [markdown]
+        types:
+          - markdown
         files: \.(md|mdown|markdown)$
-        additional_dependencies: ['markdownlint-cli']
+        additional_dependencies:
+          - markdownlint-cli
