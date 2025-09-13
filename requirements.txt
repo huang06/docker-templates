@@ -1,1 +1,3 @@
 prek==0.1.6
+confluent-kafka==2.11.1
+pytest==8.4.2
