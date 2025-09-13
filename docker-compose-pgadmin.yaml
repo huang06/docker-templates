@@ -1,5 +1,4 @@
 ---
-version: '3'
 services:
   pgadmin:
     image: docker.io/dpage/pgadmin4:8.4

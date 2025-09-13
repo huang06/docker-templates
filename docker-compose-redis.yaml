@@ -1,5 +1,4 @@
 ---
-version: "3"
 images:
   redis:
     image: docker.io/bitnami/redis:6.2.12
